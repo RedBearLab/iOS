@@ -1,4 +1,4 @@
 BLE
 ===
 
-BLE Framework
+BLE Framework for iOS.
