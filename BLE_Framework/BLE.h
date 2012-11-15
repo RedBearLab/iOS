@@ -12,8 +12,11 @@
 */
 
 #import <Foundation/Foundation.h>
-#import <CoreBluetooth/CoreBluetooth.h>
-#import <CoreBluetooth/CBService.h>
+#if TARGET_OS_IPHONE
+    #import <CoreBluetooth/CoreBluetooth.h>
+#else
+    #import <IOBluetooth/IOBluetooth.h>
+#endif
 
 @protocol BLEDelegate
 @optional

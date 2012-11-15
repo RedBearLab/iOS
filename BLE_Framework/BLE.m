@@ -186,11 +186,11 @@ static int rssi = 0;
     
     [NSTimer scheduledTimerWithTimeInterval:(float)timeout target:self selector:@selector(scanTimer:) userInfo:nil repeats:NO];
     
-    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:FALSE], CBCentralManagerScanOptionAllowDuplicatesKey, nil];
-    
-    [self.CM scanForPeripheralsWithServices:[NSArray arrayWithObject:[CBUUID UUIDWithString:@BLE_DEVICE_SERVICE_UUID]] options:options];
-    
-//    [self.CM scanForPeripheralsWithServices:nil options:options]; // Start scanning
+#if TARGET_OS_IPHONE
+    [self.CM scanForPeripheralsWithServices:[NSArray arrayWithObject:[CBUUID UUIDWithString:@BLE_DEVICE_SERVICE_UUID]] options:nil];
+#else
+    [self.CM scanForPeripheralsWithServices:nil options:nil]; // Start scanning
+#endif
     
     NSLog(@"scanForPeripheralsWithServices");
     

@@ -1,5 +1,3 @@
-BLE framework is a library for Mac OS X and iOS developers to develop Bluetooth 4.0 Low Energy Apps to interact with BLE Arduino easily.
-
 BLE_Framework
 - Our BLE Framework that is compatible for both Mac OS X and iOS.
 
