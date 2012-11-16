@@ -385,9 +385,50 @@ static int rssi = 0;
     return nil; //Characteristic not found on this service
 }
 
+#if TARGET_OS_IPHONE
+    //-- no need for iOS
+#else
+- (BOOL) isLECapableHardware
+{
+    NSString * state = nil;
+    
+    switch ([CM state])
+    {
+        case CBCentralManagerStateUnsupported:
+            state = @"The platform/hardware doesn't support Bluetooth Low Energy.";
+            break;
+        case CBCentralManagerStateUnauthorized:
+            state = @"The app is not authorized to use Bluetooth Low Energy.";
+            break;
+        case CBCentralManagerStatePoweredOff:
+            state = @"Bluetooth is currently powered off.";
+            break;
+        case CBCentralManagerStatePoweredOn:
+            return TRUE;
+        case CBCentralManagerStateUnknown:
+        default:
+            return FALSE;
+            
+    }
+    
+    NSLog(@"Central manager state: %@", state);
+        
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert setMessageText:state];
+    [alert addButtonWithTitle:@"OK"];
+    [alert setIcon:[[NSImage alloc] initWithContentsOfFile:@"AppIcon"]];
+    [alert beginSheetModalForWindow:nil modalDelegate:self didEndSelector:nil contextInfo:nil];
+    return FALSE;
+}
+#endif
+
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central
 {
+#if TARGET_OS_IPHONE
     printf("Status of CoreBluetooth central manager changed %d (%s)\r\n",central.state,[self centralManagerStateToString:central.state]);
+#else
+    [self isLECapableHardware];
+#endif
 }
 
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI
