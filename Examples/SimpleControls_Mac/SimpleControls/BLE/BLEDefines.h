@@ -14,16 +14,10 @@
 // BLE Device Service
 #define BLE_DEVICE_SERVICE_UUID                         "713D0000-503E-4C75-BA94-3148F18D941E"
 
-#define BLE_DEVICE_VENDOR_NAME_UUID                     "713D0001-503E-4C75-BA94-3148F18D941E"
-
 #define BLE_DEVICE_RX_UUID                              "713D0002-503E-4C75-BA94-3148F18D941E"
 #define BLE_DEVICE_RX_READ_LEN                               20
 
 #define BLE_DEVICE_TX_UUID                              "713D0003-503E-4C75-BA94-3148F18D941E"
 #define BLE_DEVICE_TX_WRITE_LEN                              20
-
-#define BLE_DEVICE_RESET_RX_UUID                        "713D0004-503E-4C75-BA94-3148F18D941E"
-
-#define BLE_DEVICE_LIB_VERSION_UUID                     "713D0005-503E-4C75-BA94-3148F18D941E"
 
 #define BLE_FRAMEWORK_VERSION                           0x0102

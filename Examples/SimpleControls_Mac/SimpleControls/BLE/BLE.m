@@ -26,31 +26,6 @@ static unsigned char vendor_name[20] = {0};
 static bool isConnected = false;
 static int rssi = 0;
 
--(void) enableWrite
-{
-    CBUUID *uuid_service = [CBUUID UUIDWithString:@BLE_DEVICE_SERVICE_UUID];
-    CBUUID *uuid_char = [CBUUID UUIDWithString:@BLE_DEVICE_RESET_RX_UUID];
-    unsigned char bytes[] = {0x01};
-    NSData *d = [[NSData alloc] initWithBytes:bytes length:1];
-    [self writeValue:uuid_service characteristicUUID:uuid_char p:activePeripheral data:d];
-}
-
--(void) readLibVerFromPeripheral
-{
-    CBUUID *uuid_service = [CBUUID UUIDWithString:@BLE_DEVICE_SERVICE_UUID];
-    CBUUID *uuid_char = [CBUUID UUIDWithString:@BLE_DEVICE_LIB_VERSION_UUID];
-    
-    [self readValue:uuid_service characteristicUUID:uuid_char p:activePeripheral];
-}
-
--(void) readVendorNameFromPeripheral
-{
-    CBUUID *uuid_service = [CBUUID UUIDWithString:@BLE_DEVICE_SERVICE_UUID];
-    CBUUID *uuid_char = [CBUUID UUIDWithString:@BLE_DEVICE_VENDOR_NAME_UUID];
-    
-    [self readValue:uuid_service characteristicUUID:uuid_char p:activePeripheral];
-}
-
 -(BOOL) isConnected
 {
     return isConnected;
@@ -178,19 +153,16 @@ static int rssi = 0;
 
 - (int) findBLEPeripherals:(int) timeout
 {
-    if (self.CM.state != CBCentralManagerStatePoweredOn) {
-        printf("CoreBluetooth not correctly initialized !\r\n");
-        printf("State = %d (%s)\r\n", self.CM.state,[self centralManagerStateToString:self.CM.state]);
+    if (self.CM.state != CBCentralManagerStatePoweredOn)
+    {
+        NSLog(@"CoreBluetooth not correctly initialized !\r\n");
+        NSLog(@"State = %ld (%s)\r\n", (long)self.CM.state, [self centralManagerStateToString:self.CM.state]);
         return -1;
     }
     
     [NSTimer scheduledTimerWithTimeInterval:(float)timeout target:self selector:@selector(scanTimer:) userInfo:nil repeats:NO];
     
-#if TARGET_OS_IPHONE
     [self.CM scanForPeripheralsWithServices:[NSArray arrayWithObject:[CBUUID UUIDWithString:@BLE_DEVICE_SERVICE_UUID]] options:nil];
-#else
-    [self.CM scanForPeripheralsWithServices:nil options:nil]; // Start scanning
-#endif
     
     NSLog(@"scanForPeripheralsWithServices");
     
@@ -213,7 +185,7 @@ static int rssi = 0;
     [self.CM connectPeripheral:self.activePeripheral options:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:CBConnectPeripheralOptionNotifyOnDisconnectionKey]];
 }
 
-- (const char *) centralManagerStateToString: (int)state
+- (const char *) centralManagerStateToString: (long)state
 {
     switch(state)
     {
@@ -240,7 +212,7 @@ static int rssi = 0;
 {
     [self.CM stopScan];
     printf("Stopped Scanning\r\n");
-    printf("Known peripherals : %d\r\n",[self.peripherals count]);
+    printf("Known peripherals : %lu\r\n",(unsigned long)[self.peripherals count]);
     [self printKnownPeripherals];
 }
 
@@ -490,9 +462,6 @@ static bool done = false;
                 if (!done)
                 {
                     [self enableReadNotification:activePeripheral];
-                    [self readLibVerFromPeripheral];
-                    [self readVendorNameFromPeripheral];
-                    
                     [[self delegate] bleDidConnect];
                     
                     isConnected = true;
@@ -543,7 +512,7 @@ static bool done = false;
     
     static unsigned char buf[512];
     static int len = 0;
-    int data_len;
+    UInt16 data_len;
     
     if (!error)
     {
@@ -571,19 +540,6 @@ static bool done = false;
                 [[self delegate] bleDidReceiveData:buf length:len];
                 len = 0;
             }
-            
-            [self enableWrite];
-        }
-        else if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@BLE_DEVICE_VENDOR_NAME_UUID]])
-        {
-            data_len = characteristic.value.length;
-            [characteristic.value getBytes:vendor_name length:data_len];
-//            NSLog(@"Vendor: %s", vendor_name);
-        }
-        else if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@BLE_DEVICE_LIB_VERSION_UUID]])
-        {
-            [characteristic.value getBytes:&libver length:2];
-//            NSLog(@"Lib. ver.: %X", libver);
         }
     }
     else
@@ -602,7 +558,8 @@ static bool done = false;
         rssi = peripheral.RSSI.intValue;
         [[self delegate] bleDidUpdateRSSI:activePeripheral.RSSI];
     }
-    [activePeripheral readRSSI];
+    
+//    [activePeripheral readRSSI];
 }
 
 @end

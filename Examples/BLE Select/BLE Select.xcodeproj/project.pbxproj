@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2932F68F1813D5590049385E /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 2932F68D1813D5590049385E /* BLE.m */; };
+		C2EFAF6D1727D22000ED5A4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EFAF6C1727D22000ED5A4F /* UIKit.framework */; };
+		C2EFAF6F1727D22000ED5A4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EFAF6E1727D22000ED5A4F /* Foundation.framework */; };
+		C2EFAF711727D22000ED5A4F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EFAF701727D22000ED5A4F /* CoreGraphics.framework */; };
+		C2EFAF771727D22000ED5A4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2EFAF751727D22000ED5A4F /* InfoPlist.strings */; };
+		C2EFAF791727D22000ED5A4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EFAF781727D22000ED5A4F /* main.m */; };
+		C2EFAF7D1727D22000ED5A4F /* RBLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EFAF7C1727D22000ED5A4F /* RBLAppDelegate.m */; };
+		C2EFAF7F1727D22000ED5A4F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EFAF7E1727D22000ED5A4F /* Default.png */; };
+		C2EFAF811727D22000ED5A4F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EFAF801727D22000ED5A4F /* Default@2x.png */; };
+		C2EFAF831727D22000ED5A4F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EFAF821727D22000ED5A4F /* Default-568h@2x.png */; };
+		C2EFAF861727D22000ED5A4F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2EFAF841727D22000ED5A4F /* MainStoryboard.storyboard */; };
+		C2EFAF891727D22000ED5A4F /* RBLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EFAF881727D22000ED5A4F /* RBLDetailViewController.m */; };
+		C2EFAFC21727D6BF00ED5A4F /* RBLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EFAFC11727D6BF00ED5A4F /* RBLMainViewController.m */; };
+		C2EFAFF61727F57700ED5A4F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EFAFF51727F57600ED5A4F /* CoreBluetooth.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2932F68C1813D5590049385E /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLE.h; path = BLE/BLE.h; sourceTree = SOURCE_ROOT; };
+		2932F68D1813D5590049385E /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLE.m; path = BLE/BLE.m; sourceTree = SOURCE_ROOT; };
+		2932F68E1813D5590049385E /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLEDefines.h; path = BLE/BLEDefines.h; sourceTree = SOURCE_ROOT; };
+		C2EFAF691727D22000ED5A4F /* BLE Select.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLE Select.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2EFAF6C1727D22000ED5A4F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C2EFAF6E1727D22000ED5A4F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C2EFAF701727D22000ED5A4F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C2EFAF741727D22000ED5A4F /* BLE Select-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLE Select-Info.plist"; sourceTree = "<group>"; };
+		C2EFAF761727D22000ED5A4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C2EFAF781727D22000ED5A4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2EFAF7A1727D22000ED5A4F /* BLE Select-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BLE Select-Prefix.pch"; sourceTree = "<group>"; };
+		C2EFAF7B1727D22000ED5A4F /* RBLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBLAppDelegate.h; sourceTree = "<group>"; };
+		C2EFAF7C1727D22000ED5A4F /* RBLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBLAppDelegate.m; sourceTree = "<group>"; };
+		C2EFAF7E1727D22000ED5A4F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C2EFAF801727D22000ED5A4F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C2EFAF821727D22000ED5A4F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C2EFAF851727D22000ED5A4F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C2EFAF871727D22000ED5A4F /* RBLDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBLDetailViewController.h; sourceTree = "<group>"; };
+		C2EFAF881727D22000ED5A4F /* RBLDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBLDetailViewController.m; sourceTree = "<group>"; };
+		C2EFAFC01727D6BF00ED5A4F /* RBLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBLMainViewController.h; path = ../RBLMainViewController.h; sourceTree = "<group>"; };
+		C2EFAFC11727D6BF00ED5A4F /* RBLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBLMainViewController.m; path = ../RBLMainViewController.m; sourceTree = "<group>"; };
+		C2EFAFF51727F57600ED5A4F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2EFAF661727D22000ED5A4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2EFAFF61727F57700ED5A4F /* CoreBluetooth.framework in Frameworks */,
+				C2EFAF6D1727D22000ED5A4F /* UIKit.framework in Frameworks */,
+				C2EFAF6F1727D22000ED5A4F /* Foundation.framework in Frameworks */,
+				C2EFAF711727D22000ED5A4F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29B0A1C517292B9100BCA5EB /* BLE_Framework */ = {
+			isa = PBXGroup;
+			children = (
+				2932F68C1813D5590049385E /* BLE.h */,
+				2932F68D1813D5590049385E /* BLE.m */,
+				2932F68E1813D5590049385E /* BLEDefines.h */,
+			);
+			name = BLE_Framework;
+			path = ../BLE_Framework;
+			sourceTree = "<group>";
+		};
+		C2EFAF601727D22000ED5A4F = {
+			isa = PBXGroup;
+			children = (
+				C2EFAF721727D22000ED5A4F /* BLE Select */,
+				C2EFAF6B1727D22000ED5A4F /* Frameworks */,
+				C2EFAF6A1727D22000ED5A4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2EFAF6A1727D22000ED5A4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2EFAF691727D22000ED5A4F /* BLE Select.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2EFAF6B1727D22000ED5A4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B0A1C517292B9100BCA5EB /* BLE_Framework */,
+				C2EFAFF51727F57600ED5A4F /* CoreBluetooth.framework */,
+				C2EFAF6C1727D22000ED5A4F /* UIKit.framework */,
+				C2EFAF6E1727D22000ED5A4F /* Foundation.framework */,
+				C2EFAF701727D22000ED5A4F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2EFAF721727D22000ED5A4F /* BLE Select */ = {
+			isa = PBXGroup;
+			children = (
+				C2EFAF7B1727D22000ED5A4F /* RBLAppDelegate.h */,
+				C2EFAF7C1727D22000ED5A4F /* RBLAppDelegate.m */,
+				C2EFAF841727D22000ED5A4F /* MainStoryboard.storyboard */,
+				C2EFAFC01727D6BF00ED5A4F /* RBLMainViewController.h */,
+				C2EFAFC11727D6BF00ED5A4F /* RBLMainViewController.m */,
+				C2EFAF871727D22000ED5A4F /* RBLDetailViewController.h */,
+				C2EFAF881727D22000ED5A4F /* RBLDetailViewController.m */,
+				C2EFAF731727D22000ED5A4F /* Supporting Files */,
+			);
+			path = "BLE Select";
+			sourceTree = "<group>";
+		};
+		C2EFAF731727D22000ED5A4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2EFAF741727D22000ED5A4F /* BLE Select-Info.plist */,
+				C2EFAF751727D22000ED5A4F /* InfoPlist.strings */,
+				C2EFAF781727D22000ED5A4F /* main.m */,
+				C2EFAF7A1727D22000ED5A4F /* BLE Select-Prefix.pch */,
+				C2EFAF7E1727D22000ED5A4F /* Default.png */,
+				C2EFAF801727D22000ED5A4F /* Default@2x.png */,
+				C2EFAF821727D22000ED5A4F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2EFAF681727D22000ED5A4F /* BLE Select */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2EFAF8F1727D22000ED5A4F /* Build configuration list for PBXNativeTarget "BLE Select" */;
+			buildPhases = (
+				C2EFAF651727D22000ED5A4F /* Sources */,
+				C2EFAF661727D22000ED5A4F /* Frameworks */,
+				C2EFAF671727D22000ED5A4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BLE Select";
+			productName = "BLE Select";
+			productReference = C2EFAF691727D22000ED5A4F /* BLE Select.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2EFAF611727D22000ED5A4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RBL;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = RedBear;
+			};
+			buildConfigurationList = C2EFAF641727D22000ED5A4F /* Build configuration list for PBXProject "BLE Select" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C2EFAF601727D22000ED5A4F;
+			productRefGroup = C2EFAF6A1727D22000ED5A4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2EFAF681727D22000ED5A4F /* BLE Select */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2EFAF671727D22000ED5A4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2EFAF771727D22000ED5A4F /* InfoPlist.strings in Resources */,
+				C2EFAF7F1727D22000ED5A4F /* Default.png in Resources */,
+				C2EFAF811727D22000ED5A4F /* Default@2x.png in Resources */,
+				C2EFAF831727D22000ED5A4F /* Default-568h@2x.png in Resources */,
+				C2EFAF861727D22000ED5A4F /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2EFAF651727D22000ED5A4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2EFAF791727D22000ED5A4F /* main.m in Sources */,
+				C2EFAF7D1727D22000ED5A4F /* RBLAppDelegate.m in Sources */,
+				C2EFAF891727D22000ED5A4F /* RBLDetailViewController.m in Sources */,
+				2932F68F1813D5590049385E /* BLE.m in Sources */,
+				C2EFAFC21727D6BF00ED5A4F /* RBLMainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C2EFAF751727D22000ED5A4F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2EFAF761727D22000ED5A4F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C2EFAF841727D22000ED5A4F /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2EFAF851727D22000ED5A4F /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2EFAF8D1727D22000ED5A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C2EFAF8E1727D22000ED5A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2EFAF901727D22000ED5A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLE Select/BLE Select-Prefix.pch";
+				INFOPLIST_FILE = "BLE Select/BLE Select-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C2EFAF911727D22000ED5A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLE Select/BLE Select-Prefix.pch";
+				INFOPLIST_FILE = "BLE Select/BLE Select-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2EFAF641727D22000ED5A4F /* Build configuration list for PBXProject "BLE Select" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2EFAF8D1727D22000ED5A4F /* Debug */,
+				C2EFAF8E1727D22000ED5A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2EFAF8F1727D22000ED5A4F /* Build configuration list for PBXNativeTarget "BLE Select" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2EFAF901727D22000ED5A4F /* Debug */,
+				C2EFAF911727D22000ED5A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2EFAF611727D22000ED5A4F /* Project object */;
+}

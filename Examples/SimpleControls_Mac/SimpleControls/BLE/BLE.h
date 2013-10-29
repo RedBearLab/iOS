@@ -36,7 +36,6 @@
 @property (strong, nonatomic) CBCentralManager *CM;
 @property (strong, nonatomic) CBPeripheral *activePeripheral;
 
--(void) enableWrite;
 -(void) enableReadNotification:(CBPeripheral *)p;
 -(void) read;
 -(void) writeValue:(CBUUID *)serviceUUID characteristicUUID:(CBUUID *)characteristicUUID p:(CBPeripheral *)p data:(NSData *)data;
@@ -53,7 +52,7 @@
 -(void) connectPeripheral:(CBPeripheral *)peripheral;
 
 -(UInt16) swap:(UInt16) s;
--(const char *) centralManagerStateToString:(int)state;
+-(const char *) centralManagerStateToString:(long)state;
 -(void) scanTimer:(NSTimer *)timer;
 -(void) printKnownPeripherals;
 -(void) printPeripheralInfo:(CBPeripheral*)peripheral;
