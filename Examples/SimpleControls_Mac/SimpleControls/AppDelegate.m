@@ -19,6 +19,11 @@
     ble.delegate = self;
 }
 
+- (BOOL) applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)application
+{
+    return YES;
+}
+
 -(void) bleDidConnect
 {
     NSLog(@"->Connected");
