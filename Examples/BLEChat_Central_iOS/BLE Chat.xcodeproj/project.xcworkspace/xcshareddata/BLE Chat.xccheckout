@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8E69E794-7F55-4168-B0EF-BCC7FA26504E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BLE Chat</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7105740B-CD42-4C7C-8180-4640CC21E71B</key>
+		<string>https://github.com/RedBearLab/iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Examples/Chat/BLE Chat.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7105740B-CD42-4C7C-8180-4640CC21E71B</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/RedBearLab/iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7105740B-CD42-4C7C-8180-4640CC21E71B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7105740B-CD42-4C7C-8180-4640CC21E71B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
