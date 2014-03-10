@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19CE466618B5B005008E8B62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CE466518B5B005008E8B62 /* Foundation.framework */; };
+		19CE466818B5B005008E8B62 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CE466718B5B005008E8B62 /* CoreGraphics.framework */; };
+		19CE466A18B5B005008E8B62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CE466918B5B005008E8B62 /* UIKit.framework */; };
+		19CE467018B5B005008E8B62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19CE466E18B5B005008E8B62 /* InfoPlist.strings */; };
+		19CE467218B5B005008E8B62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE467118B5B005008E8B62 /* main.m */; };
+		19CE467618B5B005008E8B62 /* RBLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE467518B5B005008E8B62 /* RBLAppDelegate.m */; };
+		19CE467918B5B005008E8B62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19CE467718B5B005008E8B62 /* Main.storyboard */; };
+		19CE467C18B5B005008E8B62 /* RBLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE467B18B5B005008E8B62 /* RBLViewController.m */; };
+		19CE467E18B5B005008E8B62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19CE467D18B5B005008E8B62 /* Images.xcassets */; };
+		19CE468518B5B005008E8B62 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CE468418B5B005008E8B62 /* XCTest.framework */; };
+		19CE468618B5B005008E8B62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CE466518B5B005008E8B62 /* Foundation.framework */; };
+		19CE468718B5B005008E8B62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CE466918B5B005008E8B62 /* UIKit.framework */; };
+		19CE468F18B5B005008E8B62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19CE468D18B5B005008E8B62 /* InfoPlist.strings */; };
+		19CE469118B5B005008E8B62 /* BLE_RGBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE469018B5B005008E8B62 /* BLE_RGBTests.m */; };
+		19CE46C518B5B0AA008E8B62 /* ANImageBitmapRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE469D18B5B0AA008E8B62 /* ANImageBitmapRep.m */; };
+		19CE46C618B5B0AA008E8B62 /* BitmapContextRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE469F18B5B0AA008E8B62 /* BitmapContextRep.m */; };
+		19CE46C718B5B0AA008E8B62 /* NSImage+ANImageBitmapRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46A218B5B0AA008E8B62 /* NSImage+ANImageBitmapRep.m */; };
+		19CE46C818B5B0AA008E8B62 /* OSCommonImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46A418B5B0AA008E8B62 /* OSCommonImage.m */; };
+		19CE46C918B5B0AA008E8B62 /* UIImage+ANImageBitmapRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46A618B5B0AA008E8B62 /* UIImage+ANImageBitmapRep.m */; };
+		19CE46CA18B5B0AA008E8B62 /* CGContextCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46A918B5B0AA008E8B62 /* CGContextCreator.m */; };
+		19CE46CB18B5B0AA008E8B62 /* CGImageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46AB18B5B0AA008E8B62 /* CGImageContainer.m */; };
+		19CE46CC18B5B0AA008E8B62 /* BitmapContextManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46AE18B5B0AA008E8B62 /* BitmapContextManipulator.m */; };
+		19CE46CD18B5B0AA008E8B62 /* BitmapCropManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46B018B5B0AA008E8B62 /* BitmapCropManipulator.m */; };
+		19CE46CE18B5B0AA008E8B62 /* BitmapDrawManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46B218B5B0AA008E8B62 /* BitmapDrawManipulator.m */; };
+		19CE46CF18B5B0AA008E8B62 /* BitmapRotationManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46B418B5B0AA008E8B62 /* BitmapRotationManipulator.m */; };
+		19CE46D018B5B0AA008E8B62 /* BitmapScaleManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46B618B5B0AA008E8B62 /* BitmapScaleManipulator.m */; };
+		19CE46D118B5B0AA008E8B62 /* BGRSLoupeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46B818B5B0AA008E8B62 /* BGRSLoupeLayer.m */; };
+		19CE46D218B5B0AA008E8B62 /* RSBrightnessSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46BA18B5B0AA008E8B62 /* RSBrightnessSlider.m */; };
+		19CE46D318B5B0AA008E8B62 /* RSColorFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46BC18B5B0AA008E8B62 /* RSColorFunctions.m */; };
+		19CE46D418B5B0AA008E8B62 /* RSColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46BE18B5B0AA008E8B62 /* RSColorPickerView.m */; };
+		19CE46D518B5B0AA008E8B62 /* RSGenerateOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46C018B5B0AA008E8B62 /* RSGenerateOperation.m */; };
+		19CE46D618B5B0AA008E8B62 /* RSOpacitySlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46C218B5B0AA008E8B62 /* RSOpacitySlider.m */; };
+		19CE46D718B5B0AA008E8B62 /* RSSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46C418B5B0AA008E8B62 /* RSSelectionView.m */; };
+		19CE46DA18B5B75A008E8B62 /* RBLLightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46D918B5B75A008E8B62 /* RBLLightViewController.m */; };
+		2955F59718CD870D00B1CE91 /* RedBearLab.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2955F59618CD870D00B1CE91 /* RedBearLab.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19CE468818B5B005008E8B62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19CE465A18B5B005008E8B62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19CE466118B5B005008E8B62;
+			remoteInfo = "BLE RGB";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19CE466218B5B005008E8B62 /* BLE RGB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLE RGB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19CE466518B5B005008E8B62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		19CE466718B5B005008E8B62 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		19CE466918B5B005008E8B62 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		19CE466D18B5B005008E8B62 /* BLE RGB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLE RGB-Info.plist"; sourceTree = "<group>"; };
+		19CE466F18B5B005008E8B62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19CE467118B5B005008E8B62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19CE467318B5B005008E8B62 /* BLE RGB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BLE RGB-Prefix.pch"; sourceTree = "<group>"; };
+		19CE467418B5B005008E8B62 /* RBLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBLAppDelegate.h; sourceTree = "<group>"; };
+		19CE467518B5B005008E8B62 /* RBLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBLAppDelegate.m; sourceTree = "<group>"; };
+		19CE467818B5B005008E8B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19CE467A18B5B005008E8B62 /* RBLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBLViewController.h; sourceTree = "<group>"; };
+		19CE467B18B5B005008E8B62 /* RBLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBLViewController.m; sourceTree = "<group>"; };
+		19CE467D18B5B005008E8B62 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		19CE468318B5B005008E8B62 /* BLE RGBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLE RGBTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19CE468418B5B005008E8B62 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		19CE468C18B5B005008E8B62 /* BLE RGBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLE RGBTests-Info.plist"; sourceTree = "<group>"; };
+		19CE468E18B5B005008E8B62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19CE469018B5B005008E8B62 /* BLE_RGBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLE_RGBTests.m; sourceTree = "<group>"; };
+		19CE469C18B5B0AA008E8B62 /* ANImageBitmapRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANImageBitmapRep.h; sourceTree = "<group>"; };
+		19CE469D18B5B0AA008E8B62 /* ANImageBitmapRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANImageBitmapRep.m; sourceTree = "<group>"; };
+		19CE469E18B5B0AA008E8B62 /* BitmapContextRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapContextRep.h; sourceTree = "<group>"; };
+		19CE469F18B5B0AA008E8B62 /* BitmapContextRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapContextRep.m; sourceTree = "<group>"; };
+		19CE46A118B5B0AA008E8B62 /* NSImage+ANImageBitmapRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+ANImageBitmapRep.h"; sourceTree = "<group>"; };
+		19CE46A218B5B0AA008E8B62 /* NSImage+ANImageBitmapRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+ANImageBitmapRep.m"; sourceTree = "<group>"; };
+		19CE46A318B5B0AA008E8B62 /* OSCommonImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCommonImage.h; sourceTree = "<group>"; };
+		19CE46A418B5B0AA008E8B62 /* OSCommonImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCommonImage.m; sourceTree = "<group>"; };
+		19CE46A518B5B0AA008E8B62 /* UIImage+ANImageBitmapRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ANImageBitmapRep.h"; sourceTree = "<group>"; };
+		19CE46A618B5B0AA008E8B62 /* UIImage+ANImageBitmapRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ANImageBitmapRep.m"; sourceTree = "<group>"; };
+		19CE46A818B5B0AA008E8B62 /* CGContextCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGContextCreator.h; sourceTree = "<group>"; };
+		19CE46A918B5B0AA008E8B62 /* CGContextCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGContextCreator.m; sourceTree = "<group>"; };
+		19CE46AA18B5B0AA008E8B62 /* CGImageContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGImageContainer.h; sourceTree = "<group>"; };
+		19CE46AB18B5B0AA008E8B62 /* CGImageContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGImageContainer.m; sourceTree = "<group>"; };
+		19CE46AD18B5B0AA008E8B62 /* BitmapContextManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapContextManipulator.h; sourceTree = "<group>"; };
+		19CE46AE18B5B0AA008E8B62 /* BitmapContextManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapContextManipulator.m; sourceTree = "<group>"; };
+		19CE46AF18B5B0AA008E8B62 /* BitmapCropManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapCropManipulator.h; sourceTree = "<group>"; };
+		19CE46B018B5B0AA008E8B62 /* BitmapCropManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapCropManipulator.m; sourceTree = "<group>"; };
+		19CE46B118B5B0AA008E8B62 /* BitmapDrawManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapDrawManipulator.h; sourceTree = "<group>"; };
+		19CE46B218B5B0AA008E8B62 /* BitmapDrawManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapDrawManipulator.m; sourceTree = "<group>"; };
+		19CE46B318B5B0AA008E8B62 /* BitmapRotationManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapRotationManipulator.h; sourceTree = "<group>"; };
+		19CE46B418B5B0AA008E8B62 /* BitmapRotationManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapRotationManipulator.m; sourceTree = "<group>"; };
+		19CE46B518B5B0AA008E8B62 /* BitmapScaleManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapScaleManipulator.h; sourceTree = "<group>"; };
+		19CE46B618B5B0AA008E8B62 /* BitmapScaleManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapScaleManipulator.m; sourceTree = "<group>"; };
+		19CE46B718B5B0AA008E8B62 /* BGRSLoupeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGRSLoupeLayer.h; sourceTree = "<group>"; };
+		19CE46B818B5B0AA008E8B62 /* BGRSLoupeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGRSLoupeLayer.m; sourceTree = "<group>"; };
+		19CE46B918B5B0AA008E8B62 /* RSBrightnessSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSBrightnessSlider.h; sourceTree = "<group>"; };
+		19CE46BA18B5B0AA008E8B62 /* RSBrightnessSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSBrightnessSlider.m; sourceTree = "<group>"; };
+		19CE46BB18B5B0AA008E8B62 /* RSColorFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSColorFunctions.h; sourceTree = "<group>"; };
+		19CE46BC18B5B0AA008E8B62 /* RSColorFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSColorFunctions.m; sourceTree = "<group>"; };
+		19CE46BD18B5B0AA008E8B62 /* RSColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSColorPickerView.h; sourceTree = "<group>"; };
+		19CE46BE18B5B0AA008E8B62 /* RSColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSColorPickerView.m; sourceTree = "<group>"; };
+		19CE46BF18B5B0AA008E8B62 /* RSGenerateOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSGenerateOperation.h; sourceTree = "<group>"; };
+		19CE46C018B5B0AA008E8B62 /* RSGenerateOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSGenerateOperation.m; sourceTree = "<group>"; };
+		19CE46C118B5B0AA008E8B62 /* RSOpacitySlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSOpacitySlider.h; sourceTree = "<group>"; };
+		19CE46C218B5B0AA008E8B62 /* RSOpacitySlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSOpacitySlider.m; sourceTree = "<group>"; };
+		19CE46C318B5B0AA008E8B62 /* RSSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSelectionView.h; sourceTree = "<group>"; };
+		19CE46C418B5B0AA008E8B62 /* RSSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSelectionView.m; sourceTree = "<group>"; };
+		19CE46D818B5B75A008E8B62 /* RBLLightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBLLightViewController.h; sourceTree = "<group>"; };
+		19CE46D918B5B75A008E8B62 /* RBLLightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBLLightViewController.m; sourceTree = "<group>"; };
+		2955F59618CD870D00B1CE91 /* RedBearLab.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RedBearLab.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19CE465F18B5B005008E8B62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19CE466818B5B005008E8B62 /* CoreGraphics.framework in Frameworks */,
+				19CE466A18B5B005008E8B62 /* UIKit.framework in Frameworks */,
+				19CE466618B5B005008E8B62 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19CE468018B5B005008E8B62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19CE468518B5B005008E8B62 /* XCTest.framework in Frameworks */,
+				19CE468718B5B005008E8B62 /* UIKit.framework in Frameworks */,
+				19CE468618B5B005008E8B62 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19CE465918B5B005008E8B62 = {
+			isa = PBXGroup;
+			children = (
+				19CE466B18B5B005008E8B62 /* BLE RGB */,
+				19CE468A18B5B005008E8B62 /* BLE RGBTests */,
+				19CE466418B5B005008E8B62 /* Frameworks */,
+				19CE466318B5B005008E8B62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19CE466318B5B005008E8B62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19CE466218B5B005008E8B62 /* BLE RGB.app */,
+				19CE468318B5B005008E8B62 /* BLE RGBTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19CE466418B5B005008E8B62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19CE466518B5B005008E8B62 /* Foundation.framework */,
+				19CE466718B5B005008E8B62 /* CoreGraphics.framework */,
+				19CE466918B5B005008E8B62 /* UIKit.framework */,
+				19CE468418B5B005008E8B62 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19CE466B18B5B005008E8B62 /* BLE RGB */ = {
+			isa = PBXGroup;
+			children = (
+				2955F59618CD870D00B1CE91 /* RedBearLab.jpg */,
+				19CE469A18B5B0AA008E8B62 /* ColorPickerClasses */,
+				19CE467418B5B005008E8B62 /* RBLAppDelegate.h */,
+				19CE467518B5B005008E8B62 /* RBLAppDelegate.m */,
+				19CE467718B5B005008E8B62 /* Main.storyboard */,
+				19CE467A18B5B005008E8B62 /* RBLViewController.h */,
+				19CE467B18B5B005008E8B62 /* RBLViewController.m */,
+				19CE467D18B5B005008E8B62 /* Images.xcassets */,
+				19CE466C18B5B005008E8B62 /* Supporting Files */,
+				19CE46D818B5B75A008E8B62 /* RBLLightViewController.h */,
+				19CE46D918B5B75A008E8B62 /* RBLLightViewController.m */,
+			);
+			path = "BLE RGB";
+			sourceTree = "<group>";
+		};
+		19CE466C18B5B005008E8B62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19CE466D18B5B005008E8B62 /* BLE RGB-Info.plist */,
+				19CE466E18B5B005008E8B62 /* InfoPlist.strings */,
+				19CE467118B5B005008E8B62 /* main.m */,
+				19CE467318B5B005008E8B62 /* BLE RGB-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19CE468A18B5B005008E8B62 /* BLE RGBTests */ = {
+			isa = PBXGroup;
+			children = (
+				19CE469018B5B005008E8B62 /* BLE_RGBTests.m */,
+				19CE468B18B5B005008E8B62 /* Supporting Files */,
+			);
+			path = "BLE RGBTests";
+			sourceTree = "<group>";
+		};
+		19CE468B18B5B005008E8B62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19CE468C18B5B005008E8B62 /* BLE RGBTests-Info.plist */,
+				19CE468D18B5B005008E8B62 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19CE469A18B5B0AA008E8B62 /* ColorPickerClasses */ = {
+			isa = PBXGroup;
+			children = (
+				19CE469B18B5B0AA008E8B62 /* ANImageBitmapRep */,
+				19CE46B718B5B0AA008E8B62 /* BGRSLoupeLayer.h */,
+				19CE46B818B5B0AA008E8B62 /* BGRSLoupeLayer.m */,
+				19CE46B918B5B0AA008E8B62 /* RSBrightnessSlider.h */,
+				19CE46BA18B5B0AA008E8B62 /* RSBrightnessSlider.m */,
+				19CE46BB18B5B0AA008E8B62 /* RSColorFunctions.h */,
+				19CE46BC18B5B0AA008E8B62 /* RSColorFunctions.m */,
+				19CE46BD18B5B0AA008E8B62 /* RSColorPickerView.h */,
+				19CE46BE18B5B0AA008E8B62 /* RSColorPickerView.m */,
+				19CE46BF18B5B0AA008E8B62 /* RSGenerateOperation.h */,
+				19CE46C018B5B0AA008E8B62 /* RSGenerateOperation.m */,
+				19CE46C118B5B0AA008E8B62 /* RSOpacitySlider.h */,
+				19CE46C218B5B0AA008E8B62 /* RSOpacitySlider.m */,
+				19CE46C318B5B0AA008E8B62 /* RSSelectionView.h */,
+				19CE46C418B5B0AA008E8B62 /* RSSelectionView.m */,
+			);
+			path = ColorPickerClasses;
+			sourceTree = "<group>";
+		};
+		19CE469B18B5B0AA008E8B62 /* ANImageBitmapRep */ = {
+			isa = PBXGroup;
+			children = (
+				19CE469C18B5B0AA008E8B62 /* ANImageBitmapRep.h */,
+				19CE469D18B5B0AA008E8B62 /* ANImageBitmapRep.m */,
+				19CE469E18B5B0AA008E8B62 /* BitmapContextRep.h */,
+				19CE469F18B5B0AA008E8B62 /* BitmapContextRep.m */,
+				19CE46A018B5B0AA008E8B62 /* Compatibility */,
+				19CE46A718B5B0AA008E8B62 /* CoreGraphics */,
+				19CE46AC18B5B0AA008E8B62 /* Manipulators */,
+			);
+			path = ANImageBitmapRep;
+			sourceTree = "<group>";
+		};
+		19CE46A018B5B0AA008E8B62 /* Compatibility */ = {
+			isa = PBXGroup;
+			children = (
+				19CE46A118B5B0AA008E8B62 /* NSImage+ANImageBitmapRep.h */,
+				19CE46A218B5B0AA008E8B62 /* NSImage+ANImageBitmapRep.m */,
+				19CE46A318B5B0AA008E8B62 /* OSCommonImage.h */,
+				19CE46A418B5B0AA008E8B62 /* OSCommonImage.m */,
+				19CE46A518B5B0AA008E8B62 /* UIImage+ANImageBitmapRep.h */,
+				19CE46A618B5B0AA008E8B62 /* UIImage+ANImageBitmapRep.m */,
+			);
+			path = Compatibility;
+			sourceTree = "<group>";
+		};
+		19CE46A718B5B0AA008E8B62 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				19CE46A818B5B0AA008E8B62 /* CGContextCreator.h */,
+				19CE46A918B5B0AA008E8B62 /* CGContextCreator.m */,
+				19CE46AA18B5B0AA008E8B62 /* CGImageContainer.h */,
+				19CE46AB18B5B0AA008E8B62 /* CGImageContainer.m */,
+			);
+			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		19CE46AC18B5B0AA008E8B62 /* Manipulators */ = {
+			isa = PBXGroup;
+			children = (
+				19CE46AD18B5B0AA008E8B62 /* BitmapContextManipulator.h */,
+				19CE46AE18B5B0AA008E8B62 /* BitmapContextManipulator.m */,
+				19CE46AF18B5B0AA008E8B62 /* BitmapCropManipulator.h */,
+				19CE46B018B5B0AA008E8B62 /* BitmapCropManipulator.m */,
+				19CE46B118B5B0AA008E8B62 /* BitmapDrawManipulator.h */,
+				19CE46B218B5B0AA008E8B62 /* BitmapDrawManipulator.m */,
+				19CE46B318B5B0AA008E8B62 /* BitmapRotationManipulator.h */,
+				19CE46B418B5B0AA008E8B62 /* BitmapRotationManipulator.m */,
+				19CE46B518B5B0AA008E8B62 /* BitmapScaleManipulator.h */,
+				19CE46B618B5B0AA008E8B62 /* BitmapScaleManipulator.m */,
+			);
+			path = Manipulators;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19CE466118B5B005008E8B62 /* BLE RGB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19CE469418B5B005008E8B62 /* Build configuration list for PBXNativeTarget "BLE RGB" */;
+			buildPhases = (
+				19CE465E18B5B005008E8B62 /* Sources */,
+				19CE465F18B5B005008E8B62 /* Frameworks */,
+				19CE466018B5B005008E8B62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BLE RGB";
+			productName = "BLE RGB";
+			productReference = 19CE466218B5B005008E8B62 /* BLE RGB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19CE468218B5B005008E8B62 /* BLE RGBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19CE469718B5B005008E8B62 /* Build configuration list for PBXNativeTarget "BLE RGBTests" */;
+			buildPhases = (
+				19CE467F18B5B005008E8B62 /* Sources */,
+				19CE468018B5B005008E8B62 /* Frameworks */,
+				19CE468118B5B005008E8B62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19CE468918B5B005008E8B62 /* PBXTargetDependency */,
+			);
+			name = "BLE RGBTests";
+			productName = "BLE RGBTests";
+			productReference = 19CE468318B5B005008E8B62 /* BLE RGBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19CE465A18B5B005008E8B62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RBL;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = redbear;
+				TargetAttributes = {
+					19CE468218B5B005008E8B62 = {
+						TestTargetID = 19CE466118B5B005008E8B62;
+					};
+				};
+			};
+			buildConfigurationList = 19CE465D18B5B005008E8B62 /* Build configuration list for PBXProject "BLE RGB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19CE465918B5B005008E8B62;
+			productRefGroup = 19CE466318B5B005008E8B62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19CE466118B5B005008E8B62 /* BLE RGB */,
+				19CE468218B5B005008E8B62 /* BLE RGBTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19CE466018B5B005008E8B62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19CE467E18B5B005008E8B62 /* Images.xcassets in Resources */,
+				2955F59718CD870D00B1CE91 /* RedBearLab.jpg in Resources */,
+				19CE467018B5B005008E8B62 /* InfoPlist.strings in Resources */,
+				19CE467918B5B005008E8B62 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19CE468118B5B005008E8B62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19CE468F18B5B005008E8B62 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19CE465E18B5B005008E8B62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19CE467218B5B005008E8B62 /* main.m in Sources */,
+				19CE46C818B5B0AA008E8B62 /* OSCommonImage.m in Sources */,
+				19CE46D318B5B0AA008E8B62 /* RSColorFunctions.m in Sources */,
+				19CE46C618B5B0AA008E8B62 /* BitmapContextRep.m in Sources */,
+				19CE46C718B5B0AA008E8B62 /* NSImage+ANImageBitmapRep.m in Sources */,
+				19CE467618B5B005008E8B62 /* RBLAppDelegate.m in Sources */,
+				19CE46CC18B5B0AA008E8B62 /* BitmapContextManipulator.m in Sources */,
+				19CE467C18B5B005008E8B62 /* RBLViewController.m in Sources */,
+				19CE46CD18B5B0AA008E8B62 /* BitmapCropManipulator.m in Sources */,
+				19CE46CE18B5B0AA008E8B62 /* BitmapDrawManipulator.m in Sources */,
+				19CE46D718B5B0AA008E8B62 /* RSSelectionView.m in Sources */,
+				19CE46CF18B5B0AA008E8B62 /* BitmapRotationManipulator.m in Sources */,
+				19CE46D618B5B0AA008E8B62 /* RSOpacitySlider.m in Sources */,
+				19CE46C518B5B0AA008E8B62 /* ANImageBitmapRep.m in Sources */,
+				19CE46D218B5B0AA008E8B62 /* RSBrightnessSlider.m in Sources */,
+				19CE46D118B5B0AA008E8B62 /* BGRSLoupeLayer.m in Sources */,
+				19CE46CB18B5B0AA008E8B62 /* CGImageContainer.m in Sources */,
+				19CE46D418B5B0AA008E8B62 /* RSColorPickerView.m in Sources */,
+				19CE46CA18B5B0AA008E8B62 /* CGContextCreator.m in Sources */,
+				19CE46D518B5B0AA008E8B62 /* RSGenerateOperation.m in Sources */,
+				19CE46C918B5B0AA008E8B62 /* UIImage+ANImageBitmapRep.m in Sources */,
+				19CE46D018B5B0AA008E8B62 /* BitmapScaleManipulator.m in Sources */,
+				19CE46DA18B5B75A008E8B62 /* RBLLightViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19CE467F18B5B005008E8B62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19CE469118B5B005008E8B62 /* BLE_RGBTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19CE468918B5B005008E8B62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19CE466118B5B005008E8B62 /* BLE RGB */;
+			targetProxy = 19CE468818B5B005008E8B62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19CE466E18B5B005008E8B62 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19CE466F18B5B005008E8B62 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		19CE467718B5B005008E8B62 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19CE467818B5B005008E8B62 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19CE468D18B5B005008E8B62 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19CE468E18B5B005008E8B62 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19CE469218B5B005008E8B62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		19CE469318B5B005008E8B62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19CE469518B5B005008E8B62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLE RGB/BLE RGB-Prefix.pch";
+				INFOPLIST_FILE = "BLE RGB/BLE RGB-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		19CE469618B5B005008E8B62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLE RGB/BLE RGB-Prefix.pch";
+				INFOPLIST_FILE = "BLE RGB/BLE RGB-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		19CE469818B5B005008E8B62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BLE RGB.app/BLE RGB";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLE RGB/BLE RGB-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BLE RGBTests/BLE RGBTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		19CE469918B5B005008E8B62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BLE RGB.app/BLE RGB";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLE RGB/BLE RGB-Prefix.pch";
+				INFOPLIST_FILE = "BLE RGBTests/BLE RGBTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19CE465D18B5B005008E8B62 /* Build configuration list for PBXProject "BLE RGB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19CE469218B5B005008E8B62 /* Debug */,
+				19CE469318B5B005008E8B62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19CE469418B5B005008E8B62 /* Build configuration list for PBXNativeTarget "BLE RGB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19CE469518B5B005008E8B62 /* Debug */,
+				19CE469618B5B005008E8B62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19CE469718B5B005008E8B62 /* Build configuration list for PBXNativeTarget "BLE RGBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19CE469818B5B005008E8B62 /* Debug */,
+				19CE469918B5B005008E8B62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19CE465A18B5B005008E8B62 /* Project object */;
+}
