@@ -33,6 +33,7 @@
 
 @property (nonatomic,assign) id <BLEDelegate> delegate;
 @property (strong, nonatomic) NSMutableArray *peripherals;
+@property (strong, nonatomic) NSMutableArray *peripheralsRssi;
 @property (strong, nonatomic) CBCentralManager *CM;
 @property (strong, nonatomic) CBPeripheral *activePeripheral;
 

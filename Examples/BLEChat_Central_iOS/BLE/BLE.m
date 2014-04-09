@@ -19,6 +19,7 @@
 @synthesize delegate;
 @synthesize CM;
 @synthesize peripherals;
+@synthesize peripheralsRssi;
 @synthesize activePeripheral;
 
 static bool isConnected = false;
@@ -179,6 +180,8 @@ static int rssi = 0;
 
 - (int) findBLEPeripherals:(int) timeout
 {
+    NSLog(@"start finding");
+    
     if (self.CM.state != CBCentralManagerStatePoweredOn)
     {
         NSLog(@"CoreBluetooth not correctly initialized !");
@@ -420,8 +423,10 @@ static int rssi = 0;
 
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI
 {
-    if (!self.peripherals)
+    if (!self.peripherals) {
         self.peripherals = [[NSMutableArray alloc] initWithObjects:peripheral,nil];
+        self.peripheralsRssi = [[NSMutableArray alloc] initWithObjects:RSSI, nil];
+    }
     else
     {
         for(int i = 0; i < self.peripherals.count; i++)
@@ -440,6 +445,7 @@ static int rssi = 0;
         }
         
         [self.peripherals addObject:peripheral];
+        [self.peripheralsRssi addObject:RSSI];
         
         NSLog(@"New UUID, adding");
     }
