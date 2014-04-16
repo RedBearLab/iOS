@@ -114,6 +114,8 @@ NSTimer *rssiTimer;
     [activityIndicator stopAnimating];
     self.navigationItem.leftBarButtonItem.enabled = YES;
     [self.navigationItem.leftBarButtonItem setTitle:@"Disconnect"];
+    
+    NSLog(@"bleDidConnect");
 }
 
 - (void)didReceiveMemoryWarning
