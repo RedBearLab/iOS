@@ -53,7 +53,11 @@
 {
     NSLog(@"Length: %d", length);
 
+    data[length] = 0;
     NSString *str = [NSString stringWithCString:data encoding:NSUTF8StringEncoding];
+    
+    
+    NSLog(@"%@", str);
     
     static NSMutableString *message;
     
