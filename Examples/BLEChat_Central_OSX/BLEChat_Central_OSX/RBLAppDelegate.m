@@ -38,6 +38,8 @@
     
     btnConnect.title = @"Disconnect";
     [indConnect stopAnimation:self];
+    
+    [ble readRSSI];
 }
 
 - (void)bleDidDisconnect

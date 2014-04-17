@@ -203,8 +203,6 @@ static int rssi = 0;
 
 - (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error;
 {
-    done = false;
-    
     [[self delegate] bleDidDisconnect];
     
     isConnected = false;
@@ -458,10 +456,7 @@ static int rssi = 0;
     
     self.activePeripheral = peripheral;
     [self.activePeripheral discoverServices:nil];
-    [self getAllServicesFromPeripheral:peripheral];
 }
-
-static bool done = false;
 
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(NSError *)error
 {
@@ -477,13 +472,9 @@ static bool done = false;
             
             if ([service.UUID isEqual:s.UUID])
             {
-                if (!done)
-                {
-                    [self enableReadNotification:activePeripheral];
-                    [[self delegate] bleDidConnect];
-                    isConnected = true;
-                    done = true;
-                }
+                [self enableReadNotification:activePeripheral];
+                [[self delegate] bleDidConnect];
+                isConnected = true;
                 
                 break;
             }
