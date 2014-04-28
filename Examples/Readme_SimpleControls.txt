@@ -8,10 +8,10 @@ B.  System Setup
 
 	Arduino Pins:
 
-	Pin 4 - Digital Output pin, for example, connect to a LED
-	Pin 5 - Digital Input pin, connect to a button
-	Pin 6 - PWM pin, connect to a LED
-	Pin 7 - Servo pin, connect to a Servo
+	Pin 2 - Digital Output pin, for example, connect to a LED
+	Pin A4 - Digital Input pin, connect to a button
+	Pin 3 - PWM pin, connect to a LED
+	Pin 5 - Servo pin, connect to a Servo
 	Pin A5 - Analog Input pin, connect to a variable resistor 
 
 C.  System Design
