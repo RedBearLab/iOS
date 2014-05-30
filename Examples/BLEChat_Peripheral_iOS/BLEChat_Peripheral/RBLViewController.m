@@ -70,7 +70,7 @@
     
     [self.peripheralManager addService:s];
     
-    NSDictionary *advertisingData = @{CBAdvertisementDataLocalNameKey : @"BLE Shield", CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:RBL_SERVICE_UUID]]};
+    NSDictionary *advertisingData = @{CBAdvertisementDataLocalNameKey : @"iPhone", CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:RBL_SERVICE_UUID]]};
     [self.peripheralManager startAdvertising:advertisingData];
 }
 
