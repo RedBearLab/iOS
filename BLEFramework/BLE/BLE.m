@@ -309,8 +309,8 @@ static int rssi = 0;
 {
     char b1[16];
     char b2[16];
-    [UUID1.data getBytes:b1];
-    [UUID2.data getBytes:b2];
+    [UUID1.data getBytes:b1 length:16];
+    [UUID2.data getBytes:b2 length:16];
     
     if (memcmp(b1, b2, UUID1.data.length) == 0)
         return 1;
@@ -322,7 +322,7 @@ static int rssi = 0;
 {
     char b1[16];
     
-    [UUID1.data getBytes:b1];
+    [UUID1.data getBytes:b1 length:16];
     UInt16 b2 = [self swap:UUID2];
     
     if (memcmp(b1, (char *)&b2, 2) == 0)
@@ -334,7 +334,7 @@ static int rssi = 0;
 -(UInt16) CBUUIDToInt:(CBUUID *) UUID
 {
     char b1[16];
-    [UUID.data getBytes:b1];
+    [UUID.data getBytes:b1 length:16];
     return ((b1[0] << 8) | b1[1]);
 }
 
