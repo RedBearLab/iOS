@@ -17,6 +17,11 @@ The examples are for our BLE development boards, currently, it supports:<br/>
 - BLE Shield
 - BLE Mini
 - Blend Micro
+- Blend
+- BLE Nano
+- RBL nRF51822
+
+Please refer to their repositories at https://github.com/RedBearLab/
 
 
 License
