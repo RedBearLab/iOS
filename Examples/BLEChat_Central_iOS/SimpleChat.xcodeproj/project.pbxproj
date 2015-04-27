@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		195DCBBD18F3E78300B134DB /* BLEChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		195DCBBD18F3E78300B134DB /* SimpleChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		195DCBC018F3E78300B134DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		195DCBC218F3E78300B134DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		195DCBC418F3E78300B134DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -104,7 +104,7 @@
 		195DCBBE18F3E78300B134DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				195DCBBD18F3E78300B134DB /* BLEChat.app */,
+				195DCBBD18F3E78300B134DB /* SimpleChat.app */,
 				195DCBDE18F3E78300B134DB /* SimpleChatTests.xctest */,
 			);
 			name = Products;
@@ -195,7 +195,7 @@
 			);
 			name = SimpleChat;
 			productName = SimpleChat;
-			productReference = 195DCBBD18F3E78300B134DB /* BLEChat.app */;
+			productReference = 195DCBBD18F3E78300B134DB /* SimpleChat.app */;
 			productType = "com.apple.product-type.application";
 		};
 		195DCBDD18F3E78300B134DB /* SimpleChatTests */ = {
@@ -411,7 +411,7 @@
 				GCC_PREFIX_HEADER = "SimpleChat/SimpleChat-Prefix.pch";
 				INFOPLIST_FILE = "SimpleChat/SimpleChat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = BLEChat;
+				PRODUCT_NAME = SimpleChat;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -425,7 +425,7 @@
 				GCC_PREFIX_HEADER = "SimpleChat/SimpleChat-Prefix.pch";
 				INFOPLIST_FILE = "SimpleChat/SimpleChat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = BLEChat;
+				PRODUCT_NAME = SimpleChat;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
