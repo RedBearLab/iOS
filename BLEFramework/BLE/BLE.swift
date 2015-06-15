@@ -26,9 +26,9 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     let RBL_CHAR_TX_UUID = "713D0002-503E-4C75-BA94-3148F18D941E"
     let RBL_CHAR_RX_UUID = "713D0003-503E-4C75-BA94-3148F18D941E"
     
-    var centralManager: CBCentralManager!
     var delegate: BLEDelegate?
     
+    private      var centralManager:   CBCentralManager!
     private      var activePeripheral: CBPeripheral?
     private      var characteristics = [String : CBCharacteristic]()
     private      var data:             NSMutableData?
