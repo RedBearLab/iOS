@@ -120,10 +120,10 @@ RBLControlViewController *cv;
             {
                 CBPeripheral *p = [ble.peripherals objectAtIndex:i];
                         
-                if (p.UUID != NULL)
+                if (p.identifier.UUIDString != NULL)
                 {
                     //Comparing UUIDs and call connectPeripheral is matched
-                    if([self.lastUUID isEqualToString:[self getUUIDString:p.UUID]])
+                    if([self.lastUUID isEqualToString:p.identifier.UUIDString])
                     {
                         showAlert = NO;
                         [ble connectPeripheral:p];
@@ -141,9 +141,9 @@ RBLControlViewController *cv;
             {
                 CBPeripheral *p = [ble.peripherals objectAtIndex:i];
                 
-                if (p.UUID != NULL)
+                if (p.identifier.UUIDString != NULL)
                 {
-                    [self.mDevices insertObject:[self getUUIDString:p.UUID] atIndex:i];
+                    [self.mDevices insertObject:p.identifier.UUIDString atIndex:i];
                     if (p.name != nil) {
                         [self.mDevicesName insertObject:p.name atIndex:i];
                     } else {
@@ -214,7 +214,7 @@ RBLControlViewController *cv;
 {
     NSLog(@"->DidConnect");
     
-    self.lastUUID = [self getUUIDString:ble.activePeripheral.UUID];
+    self.lastUUID = ble.activePeripheral.identifier.UUIDString;
     [[NSUserDefaults standardUserDefaults] setObject:self.lastUUID forKey:UUIDPrefKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
     

@@ -64,7 +64,8 @@ NSString * const  UUIDPrefKey = @"UUIDPrefKey";
 
     if (bleShield.activePeripheral)
     {
-        if(bleShield.activePeripheral.isConnected)
+   //     if(bleShield.activePeripheral.isConnected)
+        if(bleShield.activePeripheral.state == CBPeripheralStateConnected)
         {
             [[bleShield CM] cancelPeripheralConnection:[bleShield activePeripheral]];
             return;
@@ -114,10 +115,12 @@ NSString * const  UUIDPrefKey = @"UUIDPrefKey";
             {
                 CBPeripheral *p = [bleShield.peripherals objectAtIndex:i];
                 
-                if (p.UUID != NULL)
+                //if (p.UUID != NULL)
+                if (p.identifier.UUIDString != NULL)
                 {
                     //Comparing UUIDs and call connectPeripheral is matched
-                    if([self.lastUUID isEqualToString:[self getUUIDString:p.UUID]])
+                    //if([self.lastUUID isEqualToString:[self getUUIDString:p.UUID]])
+                    if([self.lastUUID isEqualToString:p.identifier.UUIDString])
                     {
                         [bleShield connectPeripheral:p];
                     }
@@ -134,9 +137,12 @@ NSString * const  UUIDPrefKey = @"UUIDPrefKey";
             {
                 CBPeripheral *p = [bleShield.peripherals objectAtIndex:i];
                 
-                if (p.UUID != NULL)
+                //if (p.UUID != NULL)
+                if (p.identifier.UUIDString != NULL)
                 {
-                    [self.mDevices insertObject:[self getUUIDString:p.UUID] atIndex:i];
+                    //[self.mDevices insertObject:[self getUUIDString:p.UUID] atIndex:i];
+                    [self.mDevices insertObject:p.identifier.UUIDString atIndex:i];
+
                 }
                 else
                 {
@@ -199,7 +205,8 @@ NSString * const  UUIDPrefKey = @"UUIDPrefKey";
 -(void) bleDidConnect
 {
     //Save UUID into system
-    self.lastUUID = [self getUUIDString:bleShield.activePeripheral.UUID];
+    //self.lastUUID = [self getUUIDString:bleShield.activePeripheral.UUID];
+    self.lastUUID = bleShield.activePeripheral.identifier.UUIDString;
     [[NSUserDefaults standardUserDefaults] setObject:self.lastUUID forKey:UUIDPrefKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
