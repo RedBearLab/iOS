@@ -106,7 +106,7 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     
     func write(data data: NSData) {
         
-        guard let char = self.characteristics[RBL_CHAR_TX_UUID] else { return }
+        guard let char = self.characteristics[RBL_CHAR_RX_UUID] else { return }
         
         self.activePeripheral?.writeValue(data, forCharacteristic: char, type: .WithoutResponse)
     }
