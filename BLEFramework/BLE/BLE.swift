@@ -61,7 +61,7 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
         
         // CBCentralManagerScanOptionAllowDuplicatesKey
         
-        NSTimer.scheduledTimerWithTimeInterval(timeout, target: self, selector: Selector("scanTimeout"), userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(timeout, target: self, selector: #selector(BLE.scanTimeout), userInfo: nil, repeats: false)
         
         let services:[CBUUID] = [CBUUID(string: RBL_SERVICE_UUID)]
         self.centralManager.scanForPeripheralsWithServices(services, options: nil)
@@ -159,19 +159,13 @@ class BLE: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     func centralManager(central: CBCentralManager, didDiscoverPeripheral peripheral: CBPeripheral, advertisementData: [String : AnyObject],RSSI: NSNumber) {
         print("[DEBUG] Find peripheral: \(peripheral.identifier.UUIDString) RSSI: \(RSSI)")
         
-        for var i = 0; i < self.peripherals.count; i++ {
-            
-            let p = self.peripherals[i] as CBPeripheral
-            
-            if(p.identifier.UUIDString == peripheral.identifier.UUIDString) {
-                
-                self.peripherals[i] = peripheral
-                
-                return
-            }
-        }
+        let index = peripherals.indexOf { $0.identifier.UUIDString == peripheral.identifier.UUIDString }
         
-        self.peripherals.append(peripheral)
+        if let index = index {
+            peripherals[index] = peripheral
+        } else {
+            peripherals.append(peripheral)
+        }
     }
     
     func centralManager(central: CBCentralManager, didFailToConnectPeripheral peripheral: CBPeripheral, error: NSError?) {
