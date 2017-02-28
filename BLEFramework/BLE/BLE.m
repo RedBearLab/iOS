@@ -415,6 +415,7 @@ static int rssi = 0;
 {
 #if TARGET_OS_IPHONE
     NSLog(@"Status of CoreBluetooth central manager changed %d (%s)", central.state, [self centralManagerStateToString:central.state]);
+	[self.delegate bleDidChangeState: central.state];
 #else
     [self isLECapableHardware];
 #endif
